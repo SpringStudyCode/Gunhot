@@ -1,0 +1,17 @@
+spring :
+  datasource :
+    driver-class-name : com.mysql.cj.jdbc.Driver
+    url : jdbc:mysql://127.0.0.1:3306/demo_jpa_schema
+    username : demo_jpa
+    password : Dlrjsghk12@
+  jpa :
+#    jpa? interface
+#    hibernate? class
+    hibernate :
+      ddl-auto : create
+#      ddl-auto : update
+#      ddl-auto : none
+    show-sql : false
+    properties :
+      hibernate :
+        dialect : org.hibernate.dialect.MySQL8Dialect
